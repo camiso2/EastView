@@ -31,7 +31,7 @@ LIBRERIAS EXTERNAS
 
 Desarrollado
 
-Jaiver Andrés Ocampo Oviedo
-Full Stack
+Jaiver Andrés Ocampo Oviedo\n
+Full Stack Developer
 Contacto : +57 3174885954
 Dic de 2023.
