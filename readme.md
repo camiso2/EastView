@@ -22,7 +22,7 @@ Módulo informativo
 TECNOLOGíAS USADAS
 * back-end : PHP->Laravel 5.6
 * base de datos (postgresql, mysql)->admite las dos bases de datos
-* front-end : HTML5, CSS3, Bootstrap 4, JQuery,
+* front-end : HTML5, CSS3, Bootstrap 4, JQuery, Ajax
 * tiempo de desarrollo 42 horas
 
 

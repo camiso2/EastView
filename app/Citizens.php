@@ -76,4 +76,28 @@ class Citizens extends Model
 
     }
 
+     /**
+     * delete citizen data base
+     *
+     * @param mixed $id
+     *
+     * @return array
+     *
+     */
+    public static function setCitizenUpdate($request): array
+    {
+        $data = [
+            'email' => $request['email'],
+            'name' => $request['name'],
+            'phone' => $request['phone'],
+        ];
+        $success = Citizens::find($request['id'])->update($data);
+        if($success){
+            return StatusController::successfullMessage(201, 'update task for id', true, 1, ['id' => $request['id'], 'message'=>'update' ]);
+        }
+        return StatusController::successfullMessage(201, 'Update not found, id  not exist', false, 0, ['error' => 'id_not_exist']);
+
+
+    }
+
 }

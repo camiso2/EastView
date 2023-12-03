@@ -19,12 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-
+//citizen
 Route::post('registerCitizens', 'CitizensController@registerCitizens')->name('registerCitizens');
 Route::post('deleteCitizen', 'CitizensController@deleteCitizen')->name('deleteCitizen');
-
+Route::post('editCitizen', 'CitizensController@updateCitizen')->name('editCitizen');
 
 //tasks
 Route::post('registerTask', 'TasksController@register')->name('registerTask');
@@ -35,6 +33,9 @@ Route::post('deleteTask', 'TasksController@deleteTask')->name('deleteTask');
 Route::get('logout', 'AuthController@logout')->name('logout');
 Route::get('/dashboard', 'AuthController@panelGestions')->name('dashboard');
 
+//dashboard
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+

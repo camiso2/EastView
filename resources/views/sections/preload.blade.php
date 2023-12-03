@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/preload.css">
 <span id="loadPageM">
-    <img src=".images/preload.gif" alt="">
+    <img src="https://crearsoft.co/eastview/images/pre.jpg" alt="">
     <p>Cargando...</p>
 </span>
 

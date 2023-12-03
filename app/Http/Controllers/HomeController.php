@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\DB;
 
 
 use App\Citizens;
@@ -30,8 +31,9 @@ class HomeController extends Controller
     {
        // return view('dashboard');
        $citizens = Citizens::orderby('created_at','DESC')->paginate(4);
+       $citizensDelete = DB::table('citizens')->where('deleted_at','!=', null)->orderby('created_at','DESC')->get();
        $tasks = Tasks::orderby('created_at','DESC')->get();
        $citizensTotal= Citizens::all();
-       return view('dashboard',compact('citizens','citizensTotal','tasks'));
+       return view('dashboard',compact('citizens','citizensTotal','tasks','citizensDelete'));
     }
 }

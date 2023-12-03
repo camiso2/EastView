@@ -32,6 +32,7 @@
                                         href="#" data-toggle="modal" data-target="#registerUser"><i
                                             class="fas fa-users fa-sm text-white-50"></i> REGISTRAR CIUDADANOS</a>
                                     @include('sections.dashboard.modal_register')
+                                    
 
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -67,8 +68,19 @@
                                                             <td>{{ $c->name }}</td>
                                                             <td>{{ $c->email }}</td>
                                                             <td>{{ $c->phone }}</td>
-                                                            <td><button class="btn btn-success btn-sm"><i
-                                                                        class="fas fa-edit"></i></button></td>
+                                                            <td>
+                                                                <button 
+                                                                type="button" 
+                                                                class="btn btn-success btn-sm" 
+                                                                data-toggle="modal" 
+                                                                data-target="#editCitizen"
+                                                                data-id="{{ $c->id }}"
+                                                                data-name="{{ $c->name }}"
+                                                                data-phone="{{ $c->phone }}"
+                                                                data-email="{{ $c->email }}"
+                                                                >
+                                                                    <i class="fas fa-edit"></i>
+                                                                </button></td>
                                                             <td><button class="btn btn-danger btn-sm" id={{ "rc".$c->id }} onclick='deleteCitizen(this)'><i class="fas fa-trash"></i></button></td>
                                                             <td>{{ $c->created_at }}</td>
                                                         </tr>
@@ -82,6 +94,25 @@
                                         </div>
                                         {{ $citizens->links('vendor.pagination.bootstrap-4') }}
                                     </div>
+                                    @include('sections.dashboard.modal_edit_citizen')
+                                
+                                    
+
+                                    <script>
+                                        $(document).ready(function (e) {
+                                          $('#editCitizen').on('show.bs.modal', function(e) {    
+                                             var id = $(e.relatedTarget).data().id;
+                                             var name = $(e.relatedTarget).data().name;
+                                             var email = $(e.relatedTarget).data().email;
+                                             var phone = $(e.relatedTarget).data().phone;
+                                             
+                                              $(e.currentTarget).find('#e_id').val(id);
+                                              $(e.currentTarget).find('#e_name').val(name);
+                                              $(e.currentTarget).find('#e_email').val(email);
+                                              $(e.currentTarget).find('#e_phone').val(phone);
+                                          });
+                                        });
+                                        </script>
                                     
                                 @else
                                     <div class="card-body">

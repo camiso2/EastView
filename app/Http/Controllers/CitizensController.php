@@ -45,10 +45,29 @@ class CitizensController extends Controller
      */
     public function deleteCitizen(Request $request){
         try {
-            return response()->json(citizens::setCitizenDelete($request->id));
+            return response()->json(Citizens::setCitizenDelete($request->id));
         } catch (\Exception $e) {
             Log::info('Error exception deleteUser/' . $e->getMessage());
             return response()->json(StatusController::eMessageError([$e->getMessage()], 'Error exception deleteUser.'));
+
+        }
+    }
+    
+    /**
+     * update citizen for vitizen_id
+     *
+     * @param Request $request
+     *
+     * @return [type]
+     *
+     */
+    public function updateCitizen(Request $request){
+        try {
+           // return response()->json($request->all());
+            return response()->json(Citizens::setCitizenUpdate($request->all()));
+        } catch (\Exception $e) {
+            Log::info('Error exception updateCitizen/' . $e->getMessage());
+            return response()->json(StatusController::eMessageError([$e->getMessage()], 'Error exception updateCitizen.'));
 
         }
     }

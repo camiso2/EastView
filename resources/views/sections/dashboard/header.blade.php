@@ -51,7 +51,11 @@
                 aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    perfil
+                    {{ Auth::user()->name }}
+                </a>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    {{ Auth::user()->email }}
                 </a>
                
                 <div class="dropdown-divider"></div>

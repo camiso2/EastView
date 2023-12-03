@@ -16,8 +16,8 @@
                 <br>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user"name="name" id="name" value="andres"
-                            placeholder="Nombre" onKeyDown="kotoba_titlea_name()" onKeyUp="kotoba_titlea_name()">
+                        <input type="text" class="form-control form-control-user"name="name" id="name" value=""
+                            placeholder="Ingrese nombre" onKeyDown="kotoba_titlea_name()" onKeyUp="kotoba_titlea_name()">
                             <small  class="form-text text-muted"><div id="car_name" readonly>---</div>
                             </small>
                     </div>
@@ -35,8 +35,8 @@
                         } 
                     </script>
                     <div class="col-sm-6">
-                        <input type="number" class="form-control form-control-user" name="phone" id="phone" value="3128759877" maxlength="10"
-                            placeholder="Teléfono" onKeyDown="kotoba_titlea()" onKeyUp="kotoba_titlea()">
+                        <input type="number" class="form-control form-control-user" name="phone" id="phone" value="" maxlength="10"
+                            placeholder="ingrese teléfono" onKeyDown="kotoba_titlea()" onKeyUp="kotoba_titlea()">
                             <small  class="form-text text-muted"><div id="car_" readonly>---</div>
                             </small>
                     </div>
@@ -55,8 +55,8 @@
                     </script>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control form-control-user" name="email" id="email" value="c@vwar.co"
-                        placeholder="Email" onKeyDown="kotoba_titlea_email()" onKeyUp="kotoba_titlea_email()">
+                    <input type="email" class="form-control form-control-user" name="email" id="email" value=""
+                        placeholder="nombre@gmail.com" onKeyDown="kotoba_titlea_email()" onKeyUp="kotoba_titlea_email()">
                         <small  class="form-text text-muted"><div id="car_email" readonly>----</div>
                         </small>
 
