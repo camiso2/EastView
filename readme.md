@@ -2,7 +2,7 @@ Prueba técnica en ILISSOLUTIONS
 
 Sistema desarrollado
 
-El sistema cuenta con diferentes herramientas para gestionar el datos.
+
 
 ## <a href="https://youtu.be/jh4rGwvGEAU" target="_blank">DEMO</a>
 
