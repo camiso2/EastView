@@ -2,9 +2,7 @@ Prueba técnica en ILISSOLUTIONS
 
 Sistema desarrollado
 
-
-
-## <a href="https://youtu.be/jh4rGwvGEAU" target="_blank">DEMO</a>
+El sistema cuenta con diferentes herramientas para gestionar los datos.
 
 ## <a href="https://youtu.be/jh4rGwvGEAU" target="_blank">DEMO</a>
 
@@ -39,8 +37,4 @@ Desarrollado
 * Jaiver Andrés Ocampo Oviedo\n
 * Full Stack Developer
 * Contacto : +57 3174885954
-<<<<<<< HEAD
 * Dic de 2023.
-=======
-* Dic de 2023.
->>>>>>> 8d3a07a111e979af1cc72b395e41440ae241e7f4
