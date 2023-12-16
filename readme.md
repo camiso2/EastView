@@ -7,14 +7,14 @@ El sistema cuenta con diferentes herramientas para gestionar el datos.
 ## <a href="https://youtu.be/jh4rGwvGEAU" target="_blank">DEMO</a>
 
 UTILIDADES
-Módulo registro de ciudadanos
-Módulo baja de ciudadanos
-Módulo edición datos del ciudadano
-Módulo registro de taréas para ciudadanos
-Módulo lista de taréas ciudadanos
-Módulo para buscar tarea por días
-Módulo inicio sesión
-Módulo paginación
+* Módulo registro de ciudadanos
+* Módulo baja de ciudadanos
+* Módulo edición datos del ciudadano
+* Módulo registro de taréas para ciudadanos
+* Módulo lista de taréas ciudadanos
+* Módulo para buscar tarea por días
+* Módulo inicio sesión
+* Módulo paginación
 
 Módulo informativo
 * Cantidad Ciudadanos registrados
